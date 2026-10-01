@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌤️ Weather Dashboard</h1>
+        <p>Check current weather and 5-day forecast</p>
+    </header>
+
+    <main>
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+                aria-label="City name"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </section>
+
+        <!-- Loading Message -->
+        <p id="loading" class="message">
+            Loading...
+        </p>
+
+        <!-- Error Message -->
+        <p id="error" class="message error">
+        </p>
+
+        <!-- Current Weather -->
+        <section id="currentWeather" class="current-weather">
+
+            <h2 id="cityName">Weather</h2>
+
+            <div class="current-info">
+
+                <div>
+                    <span class="weather-icon" id="weatherIcon">🌤️</span>
+                    <h3 id="condition">Condition</h3>
+                </div>
+
+                <div>
+                    <p class="temperature">
+                        <span id="temperature">--</span>°C
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <div>
+                    <strong>💧 Humidity</strong>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div>
+                    <strong>💨 Wind Speed</strong>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Forecast -->
+        <section class="forecast-section">
+
+            <h2>5-Day Forecast</h2>
+
+            <div id="forecast" class="forecast-container">
+                <!-- Forecast cards added using JavaScript -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Weather Dashboard | LF 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
